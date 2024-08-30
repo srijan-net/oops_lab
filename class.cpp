@@ -27,8 +27,7 @@ class hotel
 	}
 	void checkOut()
 	{
-		cout<<"details are as follows --> \n";
-        cout<<name<<endl<<days<<endl<<price<<endl<<rno<<"\n";
+        cout<<name<<endl<<days<<endl<<rno<<"\n";
         float x= cla(days,tarrif);
         cout<<"price is--> ";
         cout<<x;
@@ -49,18 +48,19 @@ int main()
 	hotel h[n];
     for(int i=0;i<n;i++)
     {       
-        cout<<"enter the days ";
+        cout<<"enter the days for coustmer no. "<<i;
 	    cin>>day;
-	    cout<<"enter name ";
+        cout<<"enter the name for coustmer no. "<<i;
 	    cin>>namee;
-	    cout<<"enter tariff ";
+        cout<<"enter the tarrif for coustmer no. "<<i;
 	    cin>>tarif;
-	    cout<<"enter room no ";
+        cout<<"enter the room no  for coustmer no. "<<i;
 	    cin>>room_no;
         h[i].chechkIN(namee,tarif,day,room_no);
     }
     for(int i=0;i<n;i++)
     {
+		cout<<"details are as follows for coust no.  --> "<<i<<"\n";
         h[i].checkOut();
     }
 	// h1.chechkIN(namee,tarif,day,room_no);
