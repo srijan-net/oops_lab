@@ -65,4 +65,4 @@ int main()
     }
 	// h1.chechkIN(namee,tarif,day,room_no);
 	return 0;
-}jhgsdfhb
+}
